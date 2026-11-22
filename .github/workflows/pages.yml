@@ -32,6 +32,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+      # The deployable site is already built and committed in dist.
       - name: Upload the static frontend
         uses: actions/upload-pages-artifact@v3
         with:

@@ -2,6 +2,8 @@
 
 Campus Hub is a responsive student-life platform concept for discovering campus events, finding clubs, and locating support services. The static demo includes an accessible tabbed browser and lets visitors save items locally in their browser.
 
+**Website:** https://zoe-511.github.io/campushub/
+
 ## Preview locally
 
 No build step or package installation is required. Serve the `dist` directory with any static file server, for example:
@@ -23,6 +25,6 @@ Then open `http://localhost:4173`.
 
 ## Deployment
 
-The GitHub Actions workflow deploys on changes to `dist` or the workflow itself. Before its first successful run, set the repository's Pages source to **GitHub Actions** under **Settings → Pages → Build and deployment**.
+The GitHub Actions workflow deploys on changes to `dist` or the workflow itself. The repository's Pages source is configured as **GitHub Actions** under **Settings → Pages → Build and deployment**.
 
 The static output is self-contained and uses relative asset paths, so it works both at the repository Pages path and on the existing Sites host.
