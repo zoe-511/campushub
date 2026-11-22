@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f2">
+  <meta name="description" content="Explore Campus Hub, a student-life platform concept for discovering events, finding clubs, and getting support.">
+  <title>Campus Hub — Campus life, all in one place.</title>
+  <link rel="icon" type="image/png" href="assets/mark.png">
+  <link rel="preload" href="assets/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="campus.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top" aria-label="Campus Hub home">
+        <span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>Campus<span class="brand-hub">Hub</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#experience">Experience</a>
+        <a href="#project">About the project</a>
+      </nav>
+      <a class="button button-small button-outline header-cta" href="#demo">Try the demo</a>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="wrap hero" aria-labelledby="intro">
+      <div class="hero-copy">
+        <p class="pill"><span class="pill-spark" aria-hidden="true">✳</span> Student-life platform concept</p>
+        <h1 id="intro">Campus life,<br>all in one<br><span>place.</span></h1>
+        <p class="hero-description">Find what’s happening, meet your people, and make campus feel like yours.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#experience">Explore the project</a>
+          <a class="button button-text" href="#demo"><span class="play-icon" aria-hidden="true"></span> Try the demo</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="assets/campus-steps.webp" alt="Four students laughing together on sunlit campus steps" width="1500" height="1000" fetchpriority="high">
+        <figcaption>
+          <a class="photo-note" href="#demo" data-demo-view="events">
+            <span class="note-icon" aria-hidden="true">✳</span>
+            <span><small>SAMPLE CAMPUS EVENT</small><strong>Courtyard Open Mic</strong></span>
+          </a>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="experience" class="experience">
+      <div class="wrap">
+        <div class="section-intro">
+          <div>
+            <p class="eyebrow">The experience</p>
+            <h2>Make campus yours.</h2>
+          </div>
+          <p>From your first week to your final semester, Campus Hub brings the best parts of student life within reach.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature feature-events">
+            <span class="feature-icon" aria-hidden="true"><i class="icon-calendar"></i></span>
+            <h3>Find what’s on</h3>
+            <p>Discover everything from open-mic nights to study breaks, and keep the events you want to attend in one place.</p>
+            <a href="#demo" data-demo-view="events">Browse sample events</a>
+          </article>
+          <article class="feature feature-clubs">
+            <span class="feature-icon" aria-hidden="true"><i class="icon-clubs"></i></span>
+            <h3>Find your people</h3>
+            <p>Get to know student-led clubs and communities that share your interests, or try something entirely new.</p>
+            <a href="#demo" data-demo-view="clubs">Explore sample clubs</a>
+          </article>
+          <article class="feature feature-resources">
+            <span class="feature-icon" aria-hidden="true"><i class="icon-resources"></i></span>
+            <h3>Get the right support</h3>
+            <p>Find the campus services that make the everyday easier, from library spaces to student wellbeing.</p>
+            <a href="#demo" data-demo-view="resources">See sample resources</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="demo">
+      <div class="wrap">
+        <div class="section-intro demo-intro">
+          <div>
+            <p class="eyebrow">Interactive demo</p>
+            <h2>A day on Campus Hub.</h2>
+          </div>
+          <p>Browse a sample campus and save the things you’d come back for. Your picks stay in this browser.</p>
+        </div>
+        <div class="app">
+          <div class="app-header">
+            <div class="app-title"><span class="mark mark-small" aria-hidden="true"><i></i><i></i><i></i><i></i></span> Campus Hub</div>
+            <span class="app-tag">Sample campus</span>
+          </div>
+          <div class="app-body">
+            <div class="demo-tabs" role="group" aria-label="Explore the sample campus">
+              <button type="button" data-view="events" aria-pressed="true" aria-controls="demo-results">Events</button>
+              <button type="button" data-view="clubs" aria-pressed="false" aria-controls="demo-results">Clubs</button>
+              <button type="button" data-view="resources" aria-pressed="false" aria-controls="demo-results">Resources</button>
+              <button type="button" data-view="saved" aria-pressed="false" aria-controls="demo-results">Saved <span id="saved-count">0</span></button>
+            </div>
+            <h3 id="demo-heading">Coming up on campus</h3>
+            <div id="demo-results" class="demo-results" aria-labelledby="demo-heading">
+              <noscript>Enable JavaScript to browse and save items in the demo.</noscript>
+            </div>
+            <p id="demo-announcement" class="visually-hidden" aria-live="polite" aria-atomic="true"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="wrap project">
+      <div>
+        <p class="eyebrow">About the project</p>
+        <h2>A friendlier way to find your footing.</h2>
+      </div>
+      <div class="project-copy">
+        <p>Campus information can be scattered across group chats, noticeboards, and department pages. Campus Hub asks what it would feel like to have one clear place to start.</p>
+        <p>This portfolio explores that idea with a student-first home for events, clubs, and campus services.</p>
+        <a class="button button-dark" href="#demo">Explore the demo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <a class="wordmark" href="#top" aria-label="Campus Hub home">
+        <span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>Campus<span class="brand-hub">Hub</span></span>
+      </a>
+      <p>A student-life platform concept.</p>
+      <a class="top-link" href="#top">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
